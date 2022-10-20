@@ -7,7 +7,7 @@ export class CatsService {
   private readonly cats: Cat[] = [];
 
   create(cat: Cat) {
-    cat.id = this.cats.length++;
+    cat.id = this.cats.length + 1;
     this.cats.push(cat);
   }
 
